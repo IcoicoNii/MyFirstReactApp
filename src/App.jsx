@@ -25,8 +25,6 @@ const App = () => {
 
   useDebounce(() => setDebouncedSearchTerm(searchTerm), 500, [searchTerm]);
 
-alert(API_KEY);
-
   const fetchMovies = async (query = '') => {
     setIsLoading(true);
     setErrorMessage('');
