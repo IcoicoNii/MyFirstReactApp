@@ -56,7 +56,7 @@ const App = () => {
       }
 
     } catch (error) {
-      alert(`Error fetching movies: ${error}`);
+      console.log(`Error fetching movies: ${error}`);
       setErrorMessage("Error fetching movies. Please try again later.");
     } finally {
       setIsLoading(false);
@@ -70,7 +70,7 @@ const App = () => {
       const movies = await getTrendingMovies();
       setTrendingMovies(movies);
     } catch (e) {
-      alert(e);
+      console.log(`Error loading trending movies: ${e}`);
     }
   }
 
