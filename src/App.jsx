@@ -25,11 +25,6 @@ const App = () => {
 
   useDebounce(() => setDebouncedSearchTerm(searchTerm), 500, [searchTerm]);
 
-  alert(import.meta.env.VITE_APPWRITE_PROJECT_NAME);
-  alert(import.meta.env.VITE_APPWRITE_PROJECT_ID);
-  alert(import.meta.env.VITE_APPWRITE_COLLECTION_ID);
-
-
   const fetchMovies = async (query = '') => {
     setIsLoading(true);
     setErrorMessage('');
