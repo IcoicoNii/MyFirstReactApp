@@ -12,9 +12,9 @@ const client = new Client()
 const database = new Databases(client);
 
 export const updateSearchCount = async(searchTerm, movie)=>{
-    alert(DATABASE_ID)
-    alert(PROJECT_ID)
-    alert(COLLECTION_ID)
+    // alert(DATABASE_ID)
+    // alert(PROJECT_ID)
+    // alert(COLLECTION_ID)
 
     try{
         const result = await database.listDocuments(DATABASE_ID, COLLECTION_ID, [
